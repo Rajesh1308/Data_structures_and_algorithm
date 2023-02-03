@@ -1,0 +1,46 @@
+for small array it takes less time to do a process with it
+and for huge array it take longer time
+
+The time taken for completion of the task varies linearly as the size of array
+time = a*n + b
+
+Here we consider only a*n (bacause it is the fastest growing term)
+and drop the constant
+
+the mathematical representation is O(n)
+
+>>Sometimes, the time will be almost constant for any number of array elements 
+hence time complexity will be 0
+(1)
+
+>>In the program of finding the duplicate in a list, the elements are first picked up 
+by first loop or iteration and each element picked will be checked for duplicate
+by another loop or iteration. hence, 
+time = a * n^2 + b 
+complexity = O(n^2)
+
+for less no of elements -> linear search
+for large no of elements -> binary search 
+
+complexity of binary search 
+iteration k = n/(2^k)
+    1 = n/(2^k)
+    n = 2^k
+    log2 n = log2 2^k
+    log2 n = k*log2 2
+    k = log2 n
+    -> O(log n)   -- Binary search
+
+>> For a list with 8 elements 
+    log2 8 = log2 2^3 = 3*log2 2 = 3 iterations   -- Gives better performance
+
+-------------------------------------------------------------------------------------
+
+In arrays, the array_variable just stores the address of the first bit of 
+first elements of the array
+
+For chosing a particular element with its index, it uses the formula
+addr + index * sizeof(integer)  # addr -> address of first bit of first element
+                                # in the array
+
+
