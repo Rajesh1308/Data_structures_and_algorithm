@@ -1,0 +1,23 @@
+insert function in python adds the element in the position/index 
+specified
+syntax : list_variable.insert(1,289)
+
+Here, 1 is the index value and 289 in the value to be added in list
+Python list is a dynamic array -> changes its size
+
+Why Linked list?
+    In array, if we need to add an element in the middle,the values are moved 
+to next address location creating a space to insert the new element. for an
+array with large no of elements, the time complexity increased also think of 
+how dynamic array extends its space. Hence we use Linked List.
+
+Benefits :
+   No previous allocation of size 
+   Insertion is easier
+
+Time complexity of linked list traversal = O(n)
+
+
+
+
+
